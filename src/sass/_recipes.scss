@@ -1,0 +1,52 @@
+.recipes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.categories {
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+	background-color: #f1f1f1;
+	flex-basis: content;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.categories-item {
+	padding: 9px 25px;
+	border-radius: 25px;
+}
+.categories-item:hover {
+	background-color: #2f3032;
+	color:#fff;
+	cursor: pointer;
+}
+.categories-item-active {
+	background-color: #2f3032;
+	color: #fff;
+}
+
+.recipe-catalog {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.recipe-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 545px;
+	height: 270px;
+	margin: 5px;
+}
+.recipe-photo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 270px;
+	height: 270px;
+}
+.duck-legs {
+	background-image: url(../../images/duckLegs.jpg);
+}

@@ -49,8 +49,9 @@
 }
 
 //----------------------------------
-.best-recipes {
+.best-recipes, .articles {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: stretch;
 }
 .news {
@@ -92,4 +93,72 @@
 	text-align: center;
 	margin: 0px;
 	max-width: 400px;
+}
+
+.pieInOneBowl, .bestMitballs {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 545px;
+	height: 267.5px;
+	margin: 5px;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.pieInOneBowl {
+	background-image: url(../../images/pieInOneBowl.jpg);
+}
+.bestMitballs {
+	background-image: url(../../images/bestMitballs.jpg);
+}
+
+.cheeseCake, .simpleDrinks, .whatIsHoney, .howKneadDough {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 267.5px;
+	height: 267.5px;
+	margin: 5px;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.cheeseCake {
+	background-image: url(../../images/cheeseCake.jpg);
+}
+.simpleDrinks {
+	background-image: url(../../images/simpleDrinks.jpg);
+}
+.whatIsHoney {
+	background-image: url(../../images/whatIsHoney.jpg);
+}
+.howKneadDough {
+	background-image: url(../../images/howKneadDough.jpg);
+}
+
+.category {
+	min-width: 120px;
+	background-color: #2f3032;
+	border: 3px solid #2f3032;
+	color: #fff;
+	text-transform: uppercase;
+	img {
+		margin-right: 5px;
+	}
+	p {
+		margin: 5px;
+	}
+}
+.recipe-name {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #fff;
+	p {
+		margin: 5px;
+	}
 }
