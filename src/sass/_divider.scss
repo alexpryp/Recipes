@@ -1,0 +1,13 @@
+.divider {
+	display: flex;
+	align-items: center;
+
+}
+.leaves {
+	padding: 0px 10px;
+}
+.line {
+	flex-basis: 150px;
+	border: 1px solid #dadada;
+	flex-grow: 1;
+}

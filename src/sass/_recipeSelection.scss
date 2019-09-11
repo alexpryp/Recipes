@@ -1,0 +1,95 @@
+.recipe-menu, .filter, .submit-block, .filter-item {
+	font-size: 12px;
+	display: flex;
+}
+
+.filter-item { 
+	width: 155px;
+	height: 35px;
+	padding: 5px;
+	border: 1px solid #dedede;
+}
+.ingredients-item {
+	width: 142px;
+	height: 35px;
+	padding: 5px;
+	margin-left: 35px;
+	border: 1px solid #dedede;
+}
+.filter-submit {
+	width: 133px;
+	height: 35px;
+	padding: 5px;
+	margin-left: 15px;
+	background-color: #c7b084;
+	color: #fff;
+}
+.recipe-menu .filter-name, .recipe-menu .ingredients-item, .recipe-menu .filter-submit {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: center;
+	p {
+		margin: 0px;
+	}
+}
+.arrow {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+}
+.recipe-menu .filter-item:hover,.recipe-menu .ingredients-item:hover {
+	cursor: pointer;
+	background-color: #252628;
+	color: #fff;
+}
+.recipe-menu .filter-submit:hover {
+	cursor: pointer;
+	background-color: #81642B;
+}
+
+//----------------------------------
+.best-recipes {
+	display: flex;
+	align-items: stretch;
+}
+.news {
+	margin: 10px -5px;
+} 
+.chicken-legs, .best-recipes-week {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 545px;
+	height: 410px;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.chicken-legs {
+	background-image: url(../../images/chickenLegs.jpg);
+}
+.best-recipes-week {
+	background-image: url(../../images/bestRecWeek.jpg);
+}
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.content-group {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0px;
+}
+.content-them {
+	color: #fff;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0px;
+	max-width: 400px;
+}

@@ -1,0 +1,53 @@
+.main-menu-wrapper {
+	flex-basis: 175px;
+	width: 175px;
+	background-color: $mainMenuBackGroundColor;
+	
+	.logo {
+		text-align: center;
+	}
+	.logo img {
+		margin: 50px auto;
+	}
+
+	.main-menu a {
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		height: 38px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: block;
+		border-left: 3px solid rgba(256, 256, 256, 0);
+	}
+	.main-menu a:hover, .main-menu .main-menu-active {
+		border-left: 3px solid #d9be8f;
+		background-color: #252628;
+	}
+
+	.nav-footer {
+		margin-top: 293px;
+		margin-bottom: 10px;
+	}
+
+	.social, .langs {
+		text-align: center;
+	}
+
+	.nav-footer .lang-active {
+		color: #737373;
+	}
+
+	.nav-footer a {
+		text-align: center;
+		color: #fff;
+		font-size: 14px;
+		line-height: 28px;
+		padding: 5px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+
