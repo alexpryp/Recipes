@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 20px;
 }
 .categories {
 	font-size: 16px;
@@ -31,22 +32,119 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
+	margin: 10px -5px;
 }
 .recipe-item {
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 	width: 545px;
 	height: 270px;
 	margin: 5px;
+	border: 2px solid #f2f2f2;
+	overflow: hidden;
 }
 .recipe-photo {
+	display: flex;
+	align-items: flex-end;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	width: 270px;
 	height: 270px;
+	padding: 10px;
+	overflow: hidden;
 }
+.author {
+	display: flex;
+	align-items: center;
+}
+.author-name {
+	color: #bcbcbc;
+}
+.recipe-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 270px;
+	height: 100%;
+	h3 {
+		margin: 10px;
+		text-align: center;
+	}
+}
+.info-block {
+	display: flex;
+	padding: 5px;
+	color: #b5904e;
+	justify-content: space-around;
+}
+.info-block-info {
+	border: 1px solid #e8e8e8;
+	border-radius: 15px;
+	padding: 5px;
+	font-size: 14px;
+}
+.ingredients {
+	padding: 10px;
+	font-size: 13px;
+}
+.recipe-info-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #9b9b9b;
+	font-size: 20px;
+	height: 45px;
+	border-top: 2px solid #e8e8e8;
+	.likes-count {
+		font-size: 14px;
+	}
+}
+.likes{
+	display: flex;
+	align-items: center;
+}
+.heart {
+	margin-left: 20px;
+	margin-right: 8px;
+}
+.socialMedia {
+	display: flex;
+	align-items: center;
+}
+.vk, .fb, .cm {
+	font-size: 16px;
+	margin-right: 20px;
+}
+
 .duck-legs {
 	background-image: url(../../images/duckLegs.jpg);
+}
+.beetroot-salad {
+	background-image: url(../../images/beetrootSalad.jpg);
+}
+.amer-pie {
+	background-image: url(../../images/amerPie.jpg);
+}
+.cesar {
+	background-image: url(../../images/cesar.jpg);
+}
+.sote {
+	background-image: url(../../images/sote.jpg);
+}
+.fried-eggplant {
+	background-image: url(../../images/friedEggplant.jpg);
+}
+.navaren {
+	background-image: url(../../images/navaren.jpg);
+}
+.brussels-sprouts {
+	background-image: url(../../images/brusselsSprouts.jpg);
+}
+.liver-cake {
+	background-image: url(../../images/liverCake.jpg);
+}
+.crab-salad {
+	background-image: url(../../images/crabSalad.jpg);
 }

@@ -1,0 +1,38 @@
+.mailing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 126px;
+	background-color: #e8e8e8;
+
+	h5 {
+		margin: 10px;
+		text-transform: uppercase;
+	}
+}
+.form {
+	display: flex;
+	input {
+		height: 30px;
+		width: 350px;
+		padding: 5px;
+	}
+	input[type="text"]::-webkit-input-placeholder { color: #a7a7a7; font-size: 10px; text-transform: uppercase}
+   	input[type="text"]:-ms-input-placeholder { color: #a7a7a7; font-size: 10px; text-transform: uppercase}
+   	input[type="text"]::-ms-input-placeholder { color: #a7a7a7; font-size: 10px; text-transform: uppercase}
+   	input[type="text"]::placeholder { color: #a7a7a7; font-size: 10px; text-transform: uppercase} 
+}
+.submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	color: #fff;
+	p {
+		margin: 0;
+	}
+	
+}

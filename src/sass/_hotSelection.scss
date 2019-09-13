@@ -1,0 +1,60 @@
+.hot-selection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.hot-items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 10px -5px;
+}
+.hot-item {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	text-transform: uppercase;
+	height: 427px;
+	width: 267.5px;
+	margin: 5px;
+	border: 0px solid #fff;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.hot-item-name {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.hangover-recipes {
+	background-image: url(../../images/hangoverRecipes.jpg);
+}
+.maslenitsa {
+	background-image: url(../../images/maslenitsa.jpg);
+}
+.recipes-for-children {
+	background-image: url(../../images/recipesForChildren.jpg);
+}
+.healthy-eating {
+	background-image: url(../../images/healthyEating.jpg);
+}
+
+.set-of-authors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.set-of-authors-item {
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10px 10px;
+	img {
+		height: 100%;
+	}
+}
