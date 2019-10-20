@@ -44,6 +44,9 @@
 	border: 2px solid #f2f2f2;
 	overflow: hidden;
 }
+.recipe-photo-container {
+	overflow: hidden;
+}
 .recipe-photo {
 	display: flex;
 	align-items: flex-end;
@@ -54,6 +57,12 @@
 	height: 270px;
 	padding: 10px;
 	overflow: hidden;
+	transition: 0.25s ease;
+}
+.recipe-photo:hover {
+		transition: 0.25s ease;
+		transform: scale(1.1) transLateY(-0.0px);
+		cursor: pointer;
 }
 .author {
 	display: flex;

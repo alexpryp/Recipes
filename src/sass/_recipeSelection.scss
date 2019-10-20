@@ -54,6 +54,23 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 }
+.best-recipes-item-container, .articles-item-container {
+	margin: 5px;
+	overflow: hidden;
+}
+.best-recipes-item, .articles-item {
+	transition: 0.25s ease;
+}
+.best-recipes-item-container:hover, .articles-item-container:hover {
+	.best-recipes-item, .articles-item {
+		transition: 0.25s ease;
+		transform: scale(1.1) transLateY(-0.0px);
+		opacity: 0.9;
+		cursor: pointer;
+	}
+}
+
+
 .news {
 	margin: 10px -5px;
 } 
@@ -63,7 +80,6 @@
 	justify-content: center;
 	width: 545px;
 	height: 410px;
-	margin: 5px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -101,7 +117,6 @@
 	align-items: flex-start;
 	width: 545px;
 	height: 267.5px;
-	margin: 5px;
 	padding: 10px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -120,7 +135,6 @@
 	align-items: flex-start;
 	width: 267.5px;
 	height: 267.5px;
-	margin: 5px;
 	padding: 10px;
 	background-repeat: no-repeat;
 	background-size: cover;

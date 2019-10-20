@@ -36,7 +36,7 @@
 		<section class="main">
 			<div class="main-wrapper">
 				<div class="status-bar">
-					<div class="search"><i class="fas fa-search"></i></div>
+					<div class="search"><input type="text" name="firstname" placeholder="Find"><i class="fas fa-search"></i></div>
 					<div class="status">
 						<div class="notifications"><i class="fas fa-bell"></i><div class="point"></div></div>
 						<div class="profile"><i class="fas fa-user"></i></div>
@@ -85,60 +85,76 @@
 					</div>
 					<div class="news">
 						<div class="best-recipes">
-							<div class="chicken-legs">
-								<div class="content">
-									<p class="content-group">Блюдо дня</p>
-									<p class="content-them">Куриные ножки на гриле</p>
-									<div>
-										<img src="images/ICONS.png" alt="">
+							<div class="best-recipes-item-container">
+								<div class="chicken-legs best-recipes-item">
+									<div class="content">
+										<p class="content-group">Блюдо дня</p>
+										<p class="content-them">Куриные ножки на гриле</p>
+										<div>
+											<img src="images/ICONS.png" alt="divider">
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="best-recipes-week">
-								<div class="content">
-									<p class="content-group">Лучшие рецепты недели</p>
-									<p class="content-them">7 лучших рецептов недели</p>
-									<div>
-										<img src="images/ICONS.png" alt="divider">
+							<div class="best-recipes-item-container">
+								<div class="best-recipes-week best-recipes-item">
+									<div class="content">
+										<p class="content-group">Лучшие рецепты недели</p>
+										<p class="content-them">7 лучших рецептов недели</p>
+										<div>
+											<img src="images/ICONS.png" alt="divider">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="articles">
-							<div class="pieInOneBowl">
-								<div class="category"></div>
-								<div class="recipe-name">
-									<p>Как приготовить пирог в одной посуде 5 рецептов</p> 
+							<div class="articles-item-container">
+								<div class="pieInOneBowl articles-item">
+									<div class="category"></div>
+									<div class="recipe-name">
+										<p>Как приготовить пирог в одной посуде 5 рецептов</p> 
+									</div>
 								</div>
 							</div>
-							<div class="cheeseCake">
-								<div class="category"><p><img src="images/cookHat.png" alt="cook hat">Полезное</p></div>
-								<div class="recipe-name">
-									<p>Как приготовить сырный торт с овощами</p> 
+							<div class="articles-item-container">
+								<div class="cheeseCake articles-item">
+									<div class="category"><p><img src="images/cookHat.png" alt="cook hat">Полезное</p></div>
+									<div class="recipe-name">
+										<p>Как приготовить сырный торт с овощами</p> 
+									</div>
+								</div>	
+							</div>
+							<div class="articles-item-container">
+								<div class="simpleDrinks articles-item">
+									<div class="category"></div>
+									<div class="recipe-name">
+										<p>Как приготовить сырный торт с овощами</p> 
+									</div>
 								</div>
 							</div>
-							<div class="simpleDrinks">
-								<div class="category"></div>
-								<div class="recipe-name">
-									<p>Как приготовить сырный торт с овощами</p> 
+							<div class="articles-item-container">
+								<div class="whatIsHoney articles-item">
+									<div class="category"></div>
+									<div class="recipe-name">
+										<p>Что такое мед?</p> 
+									</div>
 								</div>
 							</div>
-							<div class="whatIsHoney">
-								<div class="category"></div>
-								<div class="recipe-name">
-									<p>Что такое мед?</p> 
+							<div class="articles-item-container">
+								<div class="howKneadDough articles-item">
+									<div class="category"></div>
+									<div class="recipe-name">
+										<p>Как правильно замесить дрожжевое тесто</p> 
+									</div>
 								</div>
 							</div>
-							<div class="howKneadDough">
-								<div class="category"></div>
-								<div class="recipe-name">
-									<p>Как правильно замесить дрожжевое тесто</p> 
-								</div>
-							</div>
-							<div class="bestMitballs">
-								<div class="category"></div>
-								<div class="recipe-name">
-									<p>Человек, который делает лучшие митболы в Бельгии</p> 
+							<div class="articles-item-container">
+								<div class="bestMitballs articles-item">
+									<div class="category"></div>
+									<div class="recipe-name">
+										<p>Человек, который делает лучшие митболы в Бельгии</p> 
+									</div>
 								</div>
 							</div>
 						</div>
@@ -160,10 +176,12 @@
 
 					<div class="recipe-catalog">
 						<div class="recipe-item">
-							<div class="recipe-photo duck-legs">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo duck-legs">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -188,10 +206,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo beetroot-salad">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Hristin Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo beetroot-salad">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Hristin Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -216,10 +236,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo amer-pie">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo amer-pie">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -244,10 +266,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo cesar">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo cesar">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -272,10 +296,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo sote">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo sote">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -300,10 +326,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo fried-eggplant">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Hristin Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo fried-eggplant">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Hristin Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -328,10 +356,12 @@
 						</div>
 
 						<div class="recipe-item">
-							<div class="recipe-photo navaren">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Hristin Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo navaren">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Hristin Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -355,14 +385,16 @@
 							</div>
 						</div>
 						<div class="recipe-item">
-							<div class="recipe-photo brussels-sprouts">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo brussels-sprouts">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
-								<h3>Брюссельская капуста с белым соусом с сыром</h3>
+								<h3>Брюссельская капуста с белым соусом и сыром</h3>
 								<div class="info-block">
 									<div class="info-block-info"><i class="far fa-clock"></i> 107 мин</div>
 									<div class="info-block-info"><img src="images/cookHatGold.png" alt="cook hat" style="height: 14px"> Сложно</div>
@@ -382,10 +414,12 @@
 							</div>
 						</div>
 						<div class="recipe-item">
-							<div class="recipe-photo liver-cake">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo liver-cake">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
 							<div class="recipe-info">
@@ -409,12 +443,15 @@
 							</div>
 						</div>
 						<div class="recipe-item">
-							<div class="recipe-photo crab-salad">
-								<div class="author">
-									<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
-									<p class="author-name">Daria Fedorenko</p>
+							<div class="recipe-photo-container">
+								<div class="recipe-photo crab-salad">
+									<div class="author">
+										<div class="author-photo"><img src="images/Darya.png" alt="athor photo"></div>
+										<p class="author-name">Daria Fedorenko</p>
+									</div>
 								</div>
 							</div>
+							
 							<div class="recipe-info">
 								<h3>Классический крабовый салат с огурцом и мидиями</h3>
 								<div class="info-block">
@@ -494,7 +531,7 @@
 				<h5>ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</h5>
 				<div class="form">
 					<form action="#">
-						<input type="text" name="e-mail" placeholder="Адрес электронной почты">
+						<input type="email" name="e-mail" placeholder="Адрес электронной почты">
 					</form>
 					<div class="submit">
 						<p><i class="fas fa-chevron-right"></i></p>
