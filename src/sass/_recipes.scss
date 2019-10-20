@@ -80,6 +80,11 @@
 	h3 {
 		margin: 10px;
 		text-align: center;
+		color: #000;
+	}
+	h3:hover {
+		color: #d9be8f;
+		cursor: pointer;
 	}
 }
 .info-block {
@@ -125,6 +130,10 @@
 .vk, .fb, .cm {
 	font-size: 16px;
 	margin-right: 20px;
+}
+.likes:hover, .vk:hover, .fb:hover, .cm:hover  {
+	color: #000;
+	cursor: pointer;
 }
 
 .duck-legs {

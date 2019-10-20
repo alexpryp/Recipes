@@ -23,6 +23,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: 0.25s ease;
+}
+.hot-item:hover {
+	transition: 0.25s ease;
+	transform: scale(1.1) transLateY(-0.0px);
+	cursor: pointer;
 }
 .hot-item-name {
 	text-align: center;
@@ -54,7 +60,13 @@
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 10px 10px;
+	transition: 0.25s ease;
 	img {
 		height: 100%;
 	}
+}
+.set-of-authors-item:hover {
+	transition: 0.25s ease;
+	transform: scale(1.6) transLateY(-0.0px);
+	cursor: pointer;
 }
