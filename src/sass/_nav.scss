@@ -50,4 +50,41 @@
 	}
 }
 
-
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 1350px) {
+	.main-menu-wrapper {
+		display: flex;
+		flex-basis:auto;
+		width: auto;
+		justify-content: space-between;
+		//align-items: center;
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+		.logo img {
+			margin: 20px 10px;
+			margin-left: 10px;
+		}
+		.main-menu {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.main-menu a {
+			margin: 0 10px;
+			border-bottom: 3px solid rgba(256, 256, 256, 0);
+			border-left: 0px solid rgba(256, 256, 256, 0);
+		}
+		.main-menu a:hover, .main-menu .main-menu-active {
+			border-bottom: 3px solid #d9be8f;
+			background-color: #252628;
+			border-left: 0px solid rgba(256, 256, 256, 0);
+		}
+		.nav-footer {
+			margin-top: 10px;
+		}
+	}
+}
