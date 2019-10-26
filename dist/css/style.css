@@ -31,9 +31,13 @@ h2 {
 
 @media screen and (max-width: 1350px) {
   .body-wrapper {
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0px auto;
+    box-shadow: none; }
   .main {
-    align-self: center; } }
+    align-self: center; }
+    .main .main-wrapper {
+      margin: 0px auto; } }
 
 .main-menu-wrapper {
   flex-basis: 175px;
@@ -98,6 +102,7 @@ h2 {
       background-color: #252628;
       border-left: 0px solid rgba(255, 255, 255, 0); }
     .main-menu-wrapper .nav-footer {
+      min-width: 135px;
       margin-top: 10px; } }
 
 .status-bar {
@@ -108,7 +113,8 @@ h2 {
 
 .status {
   display: flex;
-  color: #bcbcbc; }
+  color: #bcbcbc;
+  margin: 10px 0px; }
 
 .profile {
   margin-left: 42px;
@@ -124,15 +130,22 @@ h2 {
   border: 3px solid red;
   border-radius: 50%; }
 
-.search input {
-  width: 250px;
-  border-radius: 3px;
-  border: 2px solid #bcbcbc;
-  padding: 2px;
-  margin-right: 10px; }
+.search {
+  margin: 10px 0px; }
+  .search input {
+    width: 250px;
+    border-radius: 3px;
+    border: 2px solid #bcbcbc;
+    padding: 2px;
+    margin-right: 10px; }
 
 .search:hover, .status:hover, .profile:hover {
   cursor: pointer; }
+
+@media screen and (max-width: 600px) {
+  .status-bar {
+    flex-direction: column;
+    align-items: center; } }
 
 .divider {
   display: flex;
@@ -201,11 +214,13 @@ h2 {
 
 .best-recipes-item-container, .articles-item-container {
   display: flex;
+  justify-content: center;
   margin: 5px;
   overflow: hidden;
-  max-width: 545px;
-  flex-grow: 1;
-  flex-shrink: 1; }
+  max-width: 545px; }
+
+.best-recipes-item-container {
+  flex-grow: 1; }
 
 .best-recipes-item, .articles-item {
   transition: 0.25s ease; }
@@ -226,7 +241,6 @@ h2 {
   max-width: 545px;
   height: 410px;
   flex-grow: 1;
-  flex-shrink: 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -261,12 +275,16 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 545px;
+  max-width: 545px;
   height: 267.5px;
   padding: 10px;
+  flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+.articles-item-wide {
+  flex-grow: 1; }
 
 .pieInOneBowl {
   background-image: url(../../images/pieInOneBowl.jpg); }
@@ -323,6 +341,12 @@ h2 {
   .ingredients-item {
     margin-left: 0px; } }
 
+@media screen and (max-width: 550px) {
+  .best-recipes-item-container, .articles-item-container {
+    flex-grow: 0; }
+  .chicken-legs, .best-recipes-week {
+    flex-grow: 0; } }
+
 .recipes {
   display: flex;
   flex-direction: column;
@@ -355,6 +379,7 @@ h2 {
 .recipe-catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: stretch;
   margin: 10px -5px; }
 
@@ -362,8 +387,8 @@ h2 {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  width: 545px;
-  height: 270px;
+  max-width: 545px;
+  min-height: 270px;
   margin: 5px;
   border: 2px solid #f2f2f2;
   overflow: hidden; }
@@ -486,6 +511,12 @@ h2 {
 .crab-salad {
   background-image: url(../../images/crabSalad.jpg); }
 
+@media screen and (max-width: 600px) {
+  .recipe-item {
+    flex-direction: column; }
+  .categories {
+    flex-direction: column; } }
+
 .hot-selection {
   display: flex;
   flex-direction: column;
@@ -496,6 +527,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
   margin: 10px -5px; }
 
 .hot-item {
@@ -561,7 +593,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 126px;
+  min-height: 126px;
   background-color: #e8e8e8; }
   .mailing h5 {
     margin: 10px;
@@ -611,12 +643,15 @@ h2 {
 footer {
   display: flex;
   justify-content: center;
-  height: 60px;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+  min-height: 60px;
   background-color: #252627; }
 
 .footer-wrapper {
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
   flex-basis: 100%;
   max-width: 1100px;
   justify-content: space-between; }
@@ -624,7 +659,8 @@ footer {
 .footer-nav, .social {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .footer-nav a, .social a {
     text-align: center;
     color: #fff;
@@ -637,6 +673,7 @@ footer {
     color: #d9be8f; }
 
 .footer-nav a {
+  display: block;
   margin-right: 20px; }
 
 .social a {

@@ -57,11 +57,13 @@
 }
 .best-recipes-item-container, .articles-item-container {
 	display: flex;
+	justify-content: center;
 	margin: 5px;
 	overflow: hidden;
 	max-width: 545px;
+}
+.best-recipes-item-container {
 	flex-grow: 1;
-	flex-shrink: 1;
 }
 .best-recipes-item, .articles-item {
 	transition: 0.25s ease;
@@ -86,7 +88,6 @@
 	max-width: 545px;
 	height: 410px;
 	flex-grow: 1;
-	flex-shrink: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -122,12 +123,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 545px;
+	max-width: 545px;
 	height: 267.5px;
 	padding: 10px;
+	flex-grow: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.articles-item-wide {
+	flex-grow: 1;
 }
 .pieInOneBowl {
 	background-image: url(../../images/pieInOneBowl.jpg);
@@ -140,6 +145,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	//flex-grow: 1;
 	width: 267.5px;
 	height: 267.5px;
 	padding: 10px;
@@ -192,5 +198,13 @@
 	}
 	.ingredients-item {
 		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.best-recipes-item-container, .articles-item-container {
+		flex-grow: 0;
+	}
+	.chicken-legs, .best-recipes-week {
+		flex-grow: 0;
 	}
 }
