@@ -43,6 +43,30 @@ h2 {
   flex-basis: 175px;
   width: 175px;
   background-color: #2f3032; }
+  .main-menu-wrapper .gamburger-menu {
+    display: none;
+    justify-content: space-between;
+    height: 50px; }
+    .main-menu-wrapper .gamburger-menu .gamburger-menu-wrapper {
+      display: flex;
+      position: relative;
+      margin-left: 20px;
+      height: 50px;
+      width: 40px;
+      cursor: pointer; }
+  .main-menu-wrapper .burger-line {
+    position: absolute;
+    right: 3px;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    transition: 0.5s; }
+  .main-menu-wrapper .first {
+    top: 12px; }
+  .main-menu-wrapper .second, .main-menu-wrapper .third {
+    top: 22px; }
+  .main-menu-wrapper .fourth {
+    top: 32px; }
   .main-menu-wrapper .logo {
     text-align: center; }
   .main-menu-wrapper .logo img {
@@ -79,9 +103,16 @@ h2 {
 @media screen and (max-width: 1350px) {
   .main-menu-wrapper {
     display: flex;
+    flex-direction: column;
     flex-basis: auto;
     width: auto;
     justify-content: space-between; }
+    .main-menu-wrapper .nav-menu {
+      display: flex;
+      flex-basis: auto;
+      width: auto;
+      align-items: center;
+      justify-content: space-between; }
     .main-menu-wrapper .logo {
       display: flex;
       align-items: center; }
@@ -104,6 +135,22 @@ h2 {
     .main-menu-wrapper .nav-footer {
       min-width: 135px;
       margin-top: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .main-menu-wrapper {
+    flex-direction: column; }
+    .main-menu-wrapper .nav-menu {
+      display: none;
+      flex-direction: column; }
+      .main-menu-wrapper .nav-menu .logo {
+        display: none; }
+      .main-menu-wrapper .nav-menu .main-menu {
+        display: flex;
+        flex-direction: column; }
+    .main-menu-wrapper .gamburger-menu {
+      display: flex; }
+    .main-menu-wrapper .logo {
+      justify-content: center; } }
 
 .status-bar {
   display: flex;
@@ -346,6 +393,10 @@ h2 {
     flex-grow: 0; }
   .chicken-legs, .best-recipes-week {
     flex-grow: 0; } }
+
+@media screen and (max-width: 400px) {
+  .chicken-legs, .best-recipes-week, .pieInOneBowl, .bestMitballs {
+    width: 275.5px; } }
 
 .recipes {
   display: flex;
@@ -639,6 +690,10 @@ h2 {
 
 .submit:hover {
   cursor: pointer; }
+
+@media screen and (max-width: 600px) {
+  .form input {
+    width: 150px; } }
 
 footer {
   display: flex;

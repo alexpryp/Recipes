@@ -208,3 +208,8 @@
 		flex-grow: 0;
 	}
 }
+@media screen and (max-width: 400px) {
+	.chicken-legs, .best-recipes-week, .pieInOneBowl, .bestMitballs {
+		width: 275.5px;
+	}
+}

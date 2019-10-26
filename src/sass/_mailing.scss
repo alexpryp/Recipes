@@ -38,3 +38,13 @@
 .submit:hover {
 	cursor: pointer;
 }
+
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 600px) {
+	.form {
+		input {
+			width: 150px;
+		}
+	}
+}

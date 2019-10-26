@@ -2,6 +2,41 @@
 	flex-basis: 175px;
 	width: 175px;
 	background-color: $mainMenuBackGroundColor;
+
+	.gamburger-menu {
+		display: none;
+		justify-content: space-between;
+		height: 50px;
+		.gamburger-menu-wrapper {
+			display: flex;
+			position: relative;
+			margin-left: 20px;
+			height: 50px;
+			width: 40px;
+			cursor: pointer;
+		}
+	}
+
+	.burger-line {
+		position: absolute;
+		right: 3px;
+		width: 35px;
+		height: 5px;
+		background-color: #fff;
+		transition: 0.5s;
+	}
+
+	.first {
+		top: 12px;
+	}
+
+	.second, .third {
+		top: 22px;
+	}
+
+	.fourth {
+		top: 32px;
+	}
 	
 	.logo {
 		text-align: center;
@@ -55,10 +90,18 @@
 @media screen and (max-width: 1350px) {
 	.main-menu-wrapper {
 		display: flex;
+		flex-direction: column;
 		flex-basis:auto;
 		width: auto;
 		justify-content: space-between;
 		//align-items: center;
+		.nav-menu {
+			display: flex;
+			flex-basis:auto;
+			width: auto;
+			align-items: center;
+			justify-content: space-between;
+		}
 		.logo {
 			display: flex;
 			align-items: center;
@@ -86,6 +129,29 @@
 		.nav-footer {
 			min-width: 135px;
 			margin-top: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-menu-wrapper {
+		flex-direction: column;
+		.nav-menu {
+			display: none;
+			flex-direction: column;
+			.logo {
+				display: none;
+			}
+			.main-menu {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		.gamburger-menu {
+			display: flex;
+		}
+		.logo {
+			justify-content: center;
 		}
 	}
 }
