@@ -39,3 +39,19 @@ h2 {
 	text-align: center;
 	font-size: 30px;
 }
+
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 1350px) {
+	.body-wrapper {
+		flex-direction: column;
+		margin: 0px auto;
+		box-shadow: none;
+	}
+	.main {
+		align-self: center;
+		.main-wrapper {
+			margin: 0px auto;
+		}
+	}
+}

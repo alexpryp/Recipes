@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 126px;
+	min-height: 126px;
 	background-color: #e8e8e8;
 
 	h5 {
@@ -37,4 +37,14 @@
 }
 .submit:hover {
 	cursor: pointer;
+}
+
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 600px) {
+	.form {
+		input {
+			width: 150px;
+		}
+	}
 }

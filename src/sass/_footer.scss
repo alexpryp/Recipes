@@ -1,13 +1,15 @@
 footer {
 	display: flex;
 	justify-content: center;
-	height: 60px;
-	
+	flex-wrap: wrap;
+	padding: 0px 10px;
+	min-height: 60px;
 	background-color: #252627;
 }
 .footer-wrapper {
 	display: flex;
 	align-items: stretch;
+	flex-wrap: wrap;
 	flex-basis: 100%;
 	max-width: 1100px;
 	justify-content: space-between;
@@ -16,6 +18,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	a {
 		text-align: center;
 		color: #fff;
@@ -31,6 +34,7 @@ footer {
 }
 .footer-nav {
 	a {
+		display: block;
 		margin-right: 20px;
 	}
 }

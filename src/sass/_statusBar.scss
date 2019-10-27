@@ -7,6 +7,7 @@
 .status {
 	display: flex;
 	color: #bcbcbc;
+	margin: 10px 0px;
 }
 .profile {
 	margin-left: 42px;
@@ -23,6 +24,7 @@
 	border-radius: 50%;
 }
 .search {
+	margin: 10px 0px;
 	input {
 		width: 250px;
 		border-radius: 3px;
@@ -33,4 +35,13 @@
 }
 .search:hover, .status:hover, .profile:hover {
 	cursor: pointer;
+}
+
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 600px) {
+	.status-bar {
+		flex-direction: column;
+		align-items: center;
+	}
 }

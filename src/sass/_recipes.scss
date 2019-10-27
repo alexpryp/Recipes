@@ -31,6 +31,7 @@
 .recipe-catalog {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: stretch;
 	margin: 10px -5px;
 }
@@ -38,8 +39,8 @@
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-	width: 545px;
-	height: 270px;
+	max-width: 545px;
+	min-height: 270px;
 	margin: 5px;
 	border: 2px solid #f2f2f2;
 	overflow: hidden;
@@ -165,4 +166,18 @@
 }
 .crab-salad {
 	background-image: url(../../images/crabSalad.jpg);
+}
+
+
+
+//-----------------------------------------------
+// Media queries
+@media screen and (max-width: 600px) {
+	.recipe-item {
+		flex-direction: column;
+		//flex-wrap: wrap;
+	}
+	.categories {
+		flex-direction: column;
+	}
 }
