@@ -30,12 +30,30 @@
 		top: 12px;
 	}
 
+	.first-active {
+		top: 22px;
+		transform: rotate(45deg);
+	}
+
 	.second, .third {
 		top: 22px;
 	}
 
+	.second-active {
+		transform: rotate(45deg);
+	}
+
+	.third-active {
+		transform: rotate(-45deg);
+	}
+
 	.fourth {
 		top: 32px;
+	}
+
+	.fourth-active {
+		top: 22px;
+		transform: rotate(-45deg);
 	}
 	
 	.logo {
@@ -137,7 +155,6 @@
 	.main-menu-wrapper {
 		flex-direction: column;
 		.nav-menu {
-			display: none;
 			flex-direction: column;
 			.logo {
 				display: none;
@@ -146,6 +163,9 @@
 				display: flex;
 				flex-direction: column;
 			}
+		}
+		.nav-menu-hide {
+			display: none;
 		}
 		.gamburger-menu {
 			display: flex;

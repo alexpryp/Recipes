@@ -63,11 +63,20 @@ h2 {
     transition: 0.5s; }
   .main-menu-wrapper .first {
     top: 12px; }
+  .main-menu-wrapper .first-active {
+    top: 22px;
+    transform: rotate(45deg); }
   .main-menu-wrapper .second, .main-menu-wrapper .third {
     top: 22px; }
+  .main-menu-wrapper .second-active {
+    transform: rotate(45deg); }
+  .main-menu-wrapper .third-active {
+    transform: rotate(-45deg); }
   .main-menu-wrapper .fourth {
     top: 32px; }
-
+  .main-menu-wrapper .fourth-active {
+    top: 22px;
+    transform: rotate(-45deg); }
   .main-menu-wrapper .logo {
     text-align: center; }
   .main-menu-wrapper .logo img {
@@ -141,13 +150,14 @@ h2 {
   .main-menu-wrapper {
     flex-direction: column; }
     .main-menu-wrapper .nav-menu {
-      display: none;
       flex-direction: column; }
       .main-menu-wrapper .nav-menu .logo {
         display: none; }
       .main-menu-wrapper .nav-menu .main-menu {
         display: flex;
         flex-direction: column; }
+    .main-menu-wrapper .nav-menu-hide {
+      display: none; }
     .main-menu-wrapper .gamburger-menu {
       display: flex; }
     .main-menu-wrapper .logo {
