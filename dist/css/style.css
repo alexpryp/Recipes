@@ -39,6 +39,14 @@ h2 {
     .main .main-wrapper {
       margin: 0px auto; } }
 
+.hide-item {
+  transform: scale3d(0, 0, 0);
+  transition: all 0.5s ease-out; }
+
+.show-item {
+  transform: scale3d(1, 1, 1);
+  transition: all 0.5s ease-out; }
+
 .main-menu-wrapper {
   flex-basis: 175px;
   width: 175px;
@@ -281,10 +289,10 @@ h2 {
   flex-grow: 1; }
 
 .best-recipes-item, .articles-item {
-  transition: 0.25s ease; }
+  transition: 0.5s ease; }
 
 .best-recipes-item-container:hover .best-recipes-item, .best-recipes-item-container:hover .articles-item, .articles-item-container:hover .best-recipes-item, .articles-item-container:hover .articles-item {
-  transition: 0.25s ease;
+  transition: 0.5s ease;
   transform: scale(1.1) transLateY(0px);
   opacity: 0.9;
   cursor: pointer; }

@@ -66,11 +66,11 @@
 	flex-grow: 1;
 }
 .best-recipes-item, .articles-item {
-	transition: 0.25s ease;
+	transition: 0.5s ease;
 }
 .best-recipes-item-container:hover, .articles-item-container:hover {
 	.best-recipes-item, .articles-item {
-		transition: 0.25s ease;
+		transition: 0.5s ease;
 		transform: scale(1.1) transLateY(-0.0px);
 		opacity: 0.9;
 		cursor: pointer;

@@ -55,3 +55,14 @@ h2 {
 		}
 	}
 }
+
+//------------------------------------------
+//The state of elements before and after animation
+.hide-item {
+	transform: scale3d(0, 0, 0);
+	transition: all 0.5s ease-out;
+}
+.show-item {
+	transform: scale3d(1, 1, 1);
+	transition: all 0.5s ease-out;
+}
