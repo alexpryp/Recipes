@@ -61,7 +61,7 @@ function scrolling(e) {
 			$(".main-menu .hide-item").removeClass("hide-item").addClass("show-item");
 		}
 		if ($(".nav-footer a").hasClass("hide-item")) {
-			$(".nav-footer .hide-item").removeClass("hide-item").addClass("show-item");
+			$(".nav-footer a").removeClass("hide-item").addClass("show-item");
 		}
 	}
 	if (isPartiallyVisible( $(".status-bar")[0] )) {
@@ -157,8 +157,86 @@ function scrolling(e) {
 			$(".recipe-item-sote").removeClass("hide-item").addClass("show-item");
 		}
 	}
-	
-	//recipe-item-sote
+	if (isPartiallyVisible( $(".recipe-item-fried-eggplant")[0] )) {
+		if ($(".recipe-item-fried-eggplant").hasClass("hide-item")) {
+			$(".recipe-item-fried-eggplant").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".recipe-item-navaren")[0] )) {
+		if ($(".recipe-item-navaren").hasClass("hide-item")) {
+			$(".recipe-item-navaren").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".recipe-item-brussels-sprouts")[0] )) {
+		if ($(".recipe-item-brussels-sprouts").hasClass("hide-item")) {
+			$(".recipe-item-brussels-sprouts").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".recipe-item-liver-cake")[0] )) {
+		if ($(".recipe-item-liver-cake").hasClass("hide-item")) {
+			$(".recipe-item-liver-cake").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".recipe-item-crab-salad")[0] )) {
+		if ($(".recipe-item-crab-salad").hasClass("hide-item")) {
+			$(".recipe-item-crab-salad").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".hot-selection h2")[0] )) {
+		if ($(".hot-selection h2").hasClass("hide-item")) {
+			$(".hot-selection h2").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".hangover-recipes")[0] )) {
+		if ($(".hangover-recipes").hasClass("hide-item")) {
+			$(".hangover-recipes").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".maslenitsa")[0] )) {
+		if ($(".maslenitsa").hasClass("hide-item")) {
+			$(".maslenitsa").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".maslenitsa")[0] )) {
+		if ($(".maslenitsa").hasClass("hide-item")) {
+			$(".maslenitsa").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".recipes-for-children")[0] )) {
+		if ($(".recipes-for-children").hasClass("hide-item")) {
+			$(".recipes-for-children").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".healthy-eating")[0] )) {
+		if ($(".healthy-eating").hasClass("hide-item")) {
+			$(".healthy-eating").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".top-authors h2")[0] )) {
+		if ($(".top-authors h2").hasClass("hide-item")) {
+			$(".top-authors h2").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".top-authors")[0] )) {
+		if ($(".set-of-authors-item").hasClass("hide-item")) {
+			$(".set-of-authors-item").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".mailing")[0] )) {
+		if ($(".mailing h5").hasClass("hide-item")) {
+			$(".mailing h5").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".form")[0] )) {
+		if ($(".form").hasClass("hide-item")) {
+			$(".form").removeClass("hide-item").addClass("show-item");
+		}
+	}
+	if (isPartiallyVisible( $(".footer-wrapper")[0] )) {
+		if ($(".footer-wrapper a").hasClass("hide-item")) {
+			$(".footer-wrapper a").removeClass("hide-item").addClass("show-item");
+		}
+	}
 }
 
 

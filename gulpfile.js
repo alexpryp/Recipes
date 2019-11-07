@@ -25,10 +25,12 @@ function styles() {
 
 function scripts() {
 	return gulp.src(['./src/js/script.js']) //берём файлы на обработку
+				.pipe(sourcemaps.init()) //инициализация создания карт исходного кода
 				.pipe(concat('script.js')) //Объединение всех файлов в один script.js
 				.pipe(babel({
 		            presets: ['@babel/env']
 		        }))
+		        .pipe(sourcemaps.write('./')) // сохранение карты исходного кода
 				.pipe(gulp.dest('./dist/js')); //сохраняем обработанные файлы
 }
 

@@ -613,10 +613,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: 0.25s ease; }
+  transition: 0.5s ease; }
 
 .hot-item:hover {
-  transition: 0.25s ease;
+  transition: 0.5s ease;
   transform: scale(1.1) transLateY(0px);
   cursor: pointer; }
 
@@ -649,12 +649,12 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   margin: 10px 10px;
-  transition: 0.25s ease; }
+  transition: 0.5s ease; }
   .set-of-authors-item img {
     height: 100%; }
 
 .set-of-authors-item:hover {
-  transition: 0.25s ease;
+  transition: 0.5s ease;
   transform: scale(1.6) transLateY(0px);
   cursor: pointer; }
 
