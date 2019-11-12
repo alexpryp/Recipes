@@ -48,8 +48,43 @@ function throttleScroll(e) {
   isScrolling = true;
 }
 
+var navMenu = $(".nav-menu")[0],
+    statusBar = $(".status-bar")[0],
+    recipeMenu = $(".recipe-menu")[0],
+    news = $(".news")[0],
+    chikenLegs = $(".chicken-legs")[0],
+    bestRecipesWeek = $(".best-recipes-week")[0],
+    pieInOneBowl = $(".pieInOneBowl")[0],
+    cheeseCake = $(".cheeseCake")[0],
+    simpleDrinks = $(".simpleDrinks")[0],
+    whatIsHoney = $(".whatIsHoney")[0],
+    howKneadDough = $(".howKneadDough")[0],
+    bestMitballs = $(".bestMitballs")[0],
+    recipes = $(".recipes h2")[0],
+    categories = $(".categories")[0],
+    recipeItemDuckLegs = $(".recipe-item-duck-legs")[0],
+    recipeItemBeetrootSalad = $(".recipe-item-beetroot-salad")[0],
+    recipeItemAmerPie = $(".recipe-item-amer-pie")[0],
+    recipeItemCesar = $(".recipe-item-cesar")[0],
+    recipeItemSote = $(".recipe-item-sote")[0],
+    recipeItemFriedEggplant = $(".recipe-item-fried-eggplant")[0],
+    recipeItemNavaren = $(".recipe-item-navaren")[0],
+    recipeItemBrusselsSprouts = $(".recipe-item-brussels-sprouts")[0],
+    recipeItemLiverCake = $(".recipe-item-liver-cake")[0],
+    recipeItemCrabSalad = $(".recipe-item-crab-salad")[0],
+    hotSelection = $(".hot-selection h2")[0],
+    hangoverRecipes = $(".hangover-recipes")[0],
+    maslenitsa = $(".maslenitsa")[0],
+    recipesForChildren = $(".recipes-for-children")[0],
+    healthyEating = $(".healthy-eating")[0],
+    topAuthorsHeader = $(".top-authors h2")[0],
+    topAuthors = $(".top-authors")[0],
+    mailing = $(".mailing")[0],
+    form = $(".form")[0],
+    footerWrapper = $(".footer-wrapper")[0];
+
 function scrolling(e) {
-  if (isPartiallyVisible($(".nav-menu")[0])) {
+  if (isPartiallyVisible(navMenu)) {
     if ($(".logo").hasClass("hide-item")) {
       $(".logo").removeClass("hide-item").addClass("show-item");
     }
@@ -63,13 +98,13 @@ function scrolling(e) {
     }
   }
 
-  if (isPartiallyVisible($(".status-bar")[0])) {
+  if (isPartiallyVisible(statusBar)) {
     if ($(".search").hasClass("hide-item")) {
       $(".status-bar .hide-item").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-menu")[0])) {
+  if (isPartiallyVisible(recipeMenu)) {
     if ($(".recipe-selection-header").hasClass("hide-item")) {
       $(".recipe-selection-header").removeClass("hide-item").addClass("show-item");
     }
@@ -79,193 +114,187 @@ function scrolling(e) {
     }
   }
 
-  if (isPartiallyVisible($(".news")[0])) {
+  if (isPartiallyVisible(news)) {
     if ($(".recipe-selection-header").hasClass("hide-item")) {
       $(".recipe-selection-header").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".chicken-legs")[0])) {
+  if (isPartiallyVisible(chikenLegs)) {
     if ($(".chicken-legs").hasClass("hide-item")) {
       $(".chicken-legs").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".best-recipes-week")[0])) {
+  if (isPartiallyVisible(bestRecipesWeek)) {
     if ($(".best-recipes-week").hasClass("hide-item")) {
       $(".best-recipes-week").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".pieInOneBowl")[0])) {
+  if (isPartiallyVisible(pieInOneBowl)) {
     if ($(".pieInOneBowl").hasClass("hide-item")) {
       $(".pieInOneBowl").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".cheeseCake")[0])) {
+  if (isPartiallyVisible(cheeseCake)) {
     if ($(".cheeseCake").hasClass("hide-item")) {
       $(".cheeseCake").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".simpleDrinks")[0])) {
+  if (isPartiallyVisible(simpleDrinks)) {
     if ($(".simpleDrinks").hasClass("hide-item")) {
       $(".simpleDrinks").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".whatIsHoney")[0])) {
+  if (isPartiallyVisible(whatIsHoney)) {
     if ($(".whatIsHoney").hasClass("hide-item")) {
       $(".whatIsHoney").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".howKneadDough")[0])) {
+  if (isPartiallyVisible(howKneadDough)) {
     if ($(".howKneadDough").hasClass("hide-item")) {
       $(".howKneadDough").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".bestMitballs")[0])) {
+  if (isPartiallyVisible(bestMitballs)) {
     if ($(".bestMitballs").hasClass("hide-item")) {
       $(".bestMitballs").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipes h2")[0])) {
+  if (isPartiallyVisible(recipes)) {
     if ($(".recipes h2").hasClass("hide-item")) {
       $(".recipes h2").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".categories")[0])) {
+  if (isPartiallyVisible(categories)) {
     if ($(".categories").hasClass("hide-item")) {
       $(".categories").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-duck-legs")[0])) {
+  if (isPartiallyVisible(recipeItemDuckLegs)) {
     if ($(".recipe-item-duck-legs").hasClass("hide-item")) {
       $(".recipe-item-duck-legs").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-beetroot-salad")[0])) {
+  if (isPartiallyVisible(recipeItemBeetrootSalad)) {
     if ($(".recipe-item-beetroot-salad").hasClass("hide-item")) {
       $(".recipe-item-beetroot-salad").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-amer-pie")[0])) {
+  if (isPartiallyVisible(recipeItemAmerPie)) {
     if ($(".recipe-item-amer-pie").hasClass("hide-item")) {
       $(".recipe-item-amer-pie").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-cesar")[0])) {
+  if (isPartiallyVisible(recipeItemCesar)) {
     if ($(".recipe-item-cesar").hasClass("hide-item")) {
       $(".recipe-item-cesar").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-sote")[0])) {
+  if (isPartiallyVisible(recipeItemSote)) {
     if ($(".recipe-item-sote").hasClass("hide-item")) {
       $(".recipe-item-sote").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-fried-eggplant")[0])) {
+  if (isPartiallyVisible(recipeItemFriedEggplant)) {
     if ($(".recipe-item-fried-eggplant").hasClass("hide-item")) {
       $(".recipe-item-fried-eggplant").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-navaren")[0])) {
+  if (isPartiallyVisible(recipeItemNavaren)) {
     if ($(".recipe-item-navaren").hasClass("hide-item")) {
       $(".recipe-item-navaren").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-brussels-sprouts")[0])) {
+  if (isPartiallyVisible(recipeItemBrusselsSprouts)) {
     if ($(".recipe-item-brussels-sprouts").hasClass("hide-item")) {
       $(".recipe-item-brussels-sprouts").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-liver-cake")[0])) {
+  if (isPartiallyVisible(recipeItemLiverCake)) {
     if ($(".recipe-item-liver-cake").hasClass("hide-item")) {
       $(".recipe-item-liver-cake").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".recipe-item-crab-salad")[0])) {
+  if (isPartiallyVisible(recipeItemCrabSalad)) {
     if ($(".recipe-item-crab-salad").hasClass("hide-item")) {
       $(".recipe-item-crab-salad").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".hot-selection h2")[0])) {
+  if (isPartiallyVisible(hotSelection)) {
     if ($(".hot-selection h2").hasClass("hide-item")) {
       $(".hot-selection h2").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".hangover-recipes")[0])) {
+  if (isPartiallyVisible(hangoverRecipes)) {
     if ($(".hangover-recipes").hasClass("hide-item")) {
       $(".hangover-recipes").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".maslenitsa")[0])) {
+  if (isPartiallyVisible(maslenitsa)) {
     if ($(".maslenitsa").hasClass("hide-item")) {
       $(".maslenitsa").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".maslenitsa")[0])) {
-    if ($(".maslenitsa").hasClass("hide-item")) {
-      $(".maslenitsa").removeClass("hide-item").addClass("show-item");
-    }
-  }
-
-  if (isPartiallyVisible($(".recipes-for-children")[0])) {
+  if (isPartiallyVisible(recipesForChildren)) {
     if ($(".recipes-for-children").hasClass("hide-item")) {
       $(".recipes-for-children").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".healthy-eating")[0])) {
+  if (isPartiallyVisible(healthyEating)) {
     if ($(".healthy-eating").hasClass("hide-item")) {
       $(".healthy-eating").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".top-authors h2")[0])) {
+  if (isPartiallyVisible(topAuthorsHeader)) {
     if ($(".top-authors h2").hasClass("hide-item")) {
       $(".top-authors h2").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".top-authors")[0])) {
+  if (isPartiallyVisible(topAuthors)) {
     if ($(".set-of-authors-item").hasClass("hide-item")) {
       $(".set-of-authors-item").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".mailing")[0])) {
+  if (isPartiallyVisible(mailing)) {
     if ($(".mailing h5").hasClass("hide-item")) {
       $(".mailing h5").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".form")[0])) {
+  if (isPartiallyVisible(form)) {
     if ($(".form").hasClass("hide-item")) {
       $(".form").removeClass("hide-item").addClass("show-item");
     }
   }
 
-  if (isPartiallyVisible($(".footer-wrapper")[0])) {
+  if (isPartiallyVisible(footerWrapper)) {
     if ($(".footer-wrapper a").hasClass("hide-item")) {
       $(".footer-wrapper a").removeClass("hide-item").addClass("show-item");
     }
