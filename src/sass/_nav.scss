@@ -35,23 +35,19 @@
 		transform: rotate(45deg);
 	}
 
-	.second, .third {
+	.second {
 		top: 22px;
 	}
 
 	.second-active {
-		transform: rotate(45deg);
-	}
-
-	.third-active {
 		transform: rotate(-45deg);
 	}
 
-	.fourth {
+	.third {
 		top: 32px;
 	}
 
-	.fourth-active {
+	.third-active {
 		top: 22px;
 		transform: rotate(-45deg);
 	}
@@ -156,6 +152,9 @@
 		flex-direction: column;
 		.nav-menu {
 			flex-direction: column;
+			height: 320px;
+			transition: height 0.5s;
+			overflow: hidden;
 			.logo {
 				display: none;
 			}
@@ -165,7 +164,9 @@
 			}
 		}
 		.nav-menu-hide {
-			display: none;
+			//display: none;
+			height: 0;
+			transition: height 0.5s;
 		}
 		.gamburger-menu {
 			display: flex;

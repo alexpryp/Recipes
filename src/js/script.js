@@ -4,7 +4,6 @@ function displayMenu(event) {
 	$(".first").toggleClass("first-active");
 	$(".second").toggleClass("second-active");
 	$(".third").toggleClass("third-active");
-	$(".fourth").toggleClass("fourth-active");
 }
 
 $(".gamburger-menu-wrapper").on('click', displayMenu);
@@ -52,7 +51,99 @@ function throttleScroll(e) {
   isScrolling = true;
 }
 
-let navMenu = $(".nav-menu")[0], 
+document.addEventListener("DOMContentLoaded", scrolling, false);
+
+let elementArray = [];
+
+let selectorsArray = [".chicken-legs", ".best-recipes-week", ".pieInOneBowl", ".cheeseCake", ".simpleDrinks", ".whatIsHoney", ".howKneadDough", ".bestMitballs", ".recipes h2", ".categories", ".recipe-item-duck-legs", ".recipe-item-beetroot-salad", ".recipe-item-amer-pie", ".recipe-item-cesar", ".recipe-item-sote", ".recipe-item-fried-eggplant", ".recipe-item-navaren", ".recipe-item-brussels-sprouts", ".recipe-item-liver-cake", ".recipe-item-crab-salad", ".hot-selection h2", ".hangover-recipes", ".maslenitsa", ".recipes-for-children", ".healthy-eating", ".top-authors h2", ".mailing", ".form"];
+
+for (let i = 0; i < selectorsArray.length; i++) {
+	elementArray.push([$(selectorsArray[i])[0], true]);
+}
+
+let body = $("body")[0],
+	navMenu = $(".nav-menu")[0],
+	navMenuFlag = true,
+	statusBar = $(".status-bar")[0],
+	statusBarFlag = true,
+	recipeMenu = $(".recipe-menu")[0],
+	recipeMenuFlag = true,
+	topAuthors = $(".top-authors")[0],
+	topAuthorsFlag = true,
+	footerWrapper = $(".footer-wrapper")[0],
+	footerWrapperFlag = true;
+	
+
+function scrolling(e) {
+	let intervalID = null;
+
+	if (isPartiallyVisible( navMenu )) {
+		if ($(".logo").hasClass("hide-item")) {
+			$(".logo").removeClass("hide-item").addClass("show-item");
+		}
+		if ( $(".main-menu a").hasClass("hide-item") ) {
+			$(".main-menu .hide-item").removeClass("hide-item").addClass("show-item");
+		}
+		if ($(".nav-footer a").hasClass("hide-item")) {
+			$(".nav-footer a").removeClass("hide-item").addClass("show-item");
+			navMenuFlag = false;
+		}
+	}
+	if (statusBarFlag && isPartiallyVisible( statusBar )) {
+		if ($(".search").hasClass("hide-item")) {
+			$(".status-bar .hide-item").removeClass("hide-item").addClass("show-item");
+			statusBarFlag = false;
+		}
+	}
+	if (recipeMenuFlag && isPartiallyVisible( recipeMenu )) {
+		if ($(".recipe-selection-header").hasClass("hide-item")) {
+			$(".recipe-selection-header").removeClass("hide-item").addClass("show-item");
+		}
+		if ($(".filter-item").hasClass("hide-item")) {
+			$(".recipe-menu .hide-item").removeClass("hide-item").addClass("show-item");
+			recipeMenuFlag = false;
+		}
+	}
+	if (topAuthorsFlag && isPartiallyVisible( topAuthors )) {
+		if ($(".set-of-authors-item").hasClass("hide-item")) {
+			$(".set-of-authors-item").removeClass("hide-item").addClass("show-item");
+			topAuthorsFlag = false;
+		}
+	}
+	if (footerWrapperFlag && isPartiallyVisible( footerWrapper )) {
+		if ($(".footer-wrapper a").hasClass("hide-item")) {
+			$(".footer-wrapper a").removeClass("hide-item").addClass("show-item");
+			footerWrapperFlag = false;
+		}
+	}
+
+	for(let i = 0; i < elementArray.length; i++) {
+		if (elementArray[i][1] && isPartiallyVisible( elementArray[i][0] )) {
+			if (elementArray[i][0].classList.contains("hide-item")) {
+				elementArray[i][0].classList.remove("hide-item");
+				elementArray[i][0].classList.add("show-item");
+				elementArray[i][1] = false;
+			}
+		}
+	}
+
+	function cleanEventListeners() {
+		if (!body.classList.contains("hide-item")) {
+			clearInterval(intervalID);
+			document.removeEventListener("DOMContentLoaded", scrolling);
+			document.removeEventListener("scroll", throttleScroll);
+		}
+	}
+
+	intervalID = setInterval(cleanEventListeners, 5000);
+}
+
+
+
+
+
+
+/*let navMenu = $(".nav-menu")[0],
 	statusBar = $(".status-bar")[0],
 	statusBarFlag = true,
 	recipeMenu = $(".recipe-menu")[0],
@@ -331,7 +422,7 @@ function scrolling(e) {
 			footerWrapperFlag = false;
 		}
 	}
-}
+}*/
 
 
 

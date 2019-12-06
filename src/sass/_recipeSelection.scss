@@ -196,6 +196,15 @@
 	.recipe-menu, .filter, .submit-block {
 		flex-wrap: wrap;
 	}
+	.filter {
+		align-items: center;
+		justify-content: center;
+	}
+	.recipe-menu {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	.ingredients-item {
 		margin-left: 0px;
 	}
